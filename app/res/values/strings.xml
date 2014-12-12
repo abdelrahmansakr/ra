@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">app</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_homepage">Home</string>
+    <string name="action_social_notifications">Notifications</string>
+    <string name="action_profile">Profile</string>
+
+    <color name="appBackground">#EBE7E4</color>
+    <color name="textColor">#FF8000</color>
+
+    <string name="signin">Sign in</string>
+    <string name="email">E-mail:</string>
+    <string name="password">Password:</string>
+    <string name="emailregister">Register with E-mail</string>
+    <string name="login">Log In</string>
+    <string name="facebookregister">Register with Facebook</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="name">Nariman Hesham</string>
+    <string name="myemail">nariman.hesham93@gmail.com</string>
+    <string name="birthdate">Birth Date:</string>
+    <string name="mybirthdate">1/9/1993</string>
+    <string name="gender">Gender:</string>
+    <string name="female">Female</string>
+
+    <color name="greyText">#4F4F4F</color>
+
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_restaurants_and_cafes">Restaurants &amp; Cafes</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="notifications">Notifications:</string>
+    <string name="action_logout">Logout</string>
+
+</resources>
