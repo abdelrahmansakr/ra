@@ -34,5 +34,7 @@
     <string name="title_activity_notifications">Notifications</string>
     <string name="notifications">Notifications:</string>
     <string name="action_logout">Logout</string>
+    <string name="facebook_app_id">592528824214377</string>
+    <string name="title_facebook_login">com.facebook.LoginActivity</string>
 
 </resources>

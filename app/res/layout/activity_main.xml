@@ -6,40 +6,13 @@
     android:background="@color/appBackground">
 
    	<Button
-   	    android:id="@+id/button3"
-   	    android:layout_width="280dp"
-   	    android:layout_height="wrap_content"
-   	    android:layout_alignLeft="@+id/button2"
-   	    android:layout_below="@+id/button2"
-   	    android:layout_marginTop="28dp"
-   	    android:text="@string/login"
-   	    android:textColor="@color/textColor"
-   	    android:textSize="20dp"
-   	    android:textStyle="normal"
-   	    android:typeface="serif" 
-   	    android:onClick="goToLoginPage"/>
-
-   	<Button
    	    android:id="@+id/button2"
-   	    android:layout_width="280dp"
-   	    android:layout_height="wrap_content"
-   	    android:layout_alignLeft="@+id/button1"
-   	    android:layout_below="@+id/button1"
-   	    android:layout_marginTop="31dp"
-   	    android:text="@string/emailregister"
-   	    android:textColor="@color/textColor"
-   	    android:textSize="20dp"
-   	    android:textStyle="normal"
-   	    android:typeface="serif" />
-
-   	<Button
-   	    android:id="@+id/button1"
    	    android:layout_width="280dp"
    	    android:layout_height="wrap_content"
    	    android:layout_below="@+id/imageView1"
    	    android:layout_centerHorizontal="true"
-   	    android:layout_marginTop="62dp"
-   	    android:text="@string/facebookregister"
+   	    android:layout_marginTop="31dp"
+   	    android:text="@string/emailregister"
    	    android:textColor="@color/textColor"
    	    android:textSize="20dp"
    	    android:textStyle="normal"
@@ -54,5 +27,27 @@
    	    android:layout_marginTop="19dp"
    	    android:scaleType="centerCrop"
    	    android:src="@raw/raseenee" />
+
+   	    <com.facebook.widget.LoginButton
+   	        android:id="@+id/authButton"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:layout_below="@+id/button3"
+   	        android:layout_centerHorizontal="true"
+   	        android:layout_marginTop="45dp" />
+
+   	    <Button
+   	        android:id="@+id/button3"
+   	        android:layout_width="280dp"
+   	        android:layout_height="wrap_content"
+   	        android:layout_alignLeft="@+id/button2"
+   	        android:layout_below="@+id/button2"
+   	        android:layout_marginTop="45dp"
+   	        android:onClick="goToLoginPage"
+   	        android:text="@string/login"
+   	        android:textColor="@color/textColor"
+   	        android:textSize="20dp"
+   	        android:textStyle="normal"
+   	        android:typeface="serif" />
     
 </RelativeLayout>
