@@ -15,7 +15,7 @@
     <string name="signin">Sign in</string>
     <string name="email">E-mail:</string>
     <string name="password">Password:</string>
-    <string name="emailregister">Register with E-mail</string>
+    <string name="emailregister">Sign Up</string>
     <string name="login">Log In</string>
     <string name="facebookregister">Register with Facebook</string>
     <string name="title_activity_login">LoginActivity</string>
@@ -34,7 +34,17 @@
     <string name="title_activity_notifications">Notifications</string>
     <string name="notifications">Notifications:</string>
     <string name="action_logout">Logout</string>
+
     <string name="facebook_app_id">592528824214377</string>
     <string name="title_facebook_login">com.facebook.LoginActivity</string>
+
+    <string name="title_activity_signup">Sign Up</string>
+    <string name="username">Username:</string>
+    <string name="confirmpassword">Confirm Password:</string>
+    <string name="firstname">First Name:</string>
+    <string name="lastname">Last Name:</string>
+    <string name="country">Country:</string>
+    <string name="city">City:</string>
+    <string name="submit">Submit</string>
 
 </resources>

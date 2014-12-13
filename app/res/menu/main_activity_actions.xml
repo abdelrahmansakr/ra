@@ -30,12 +30,6 @@
           android:icon="@drawable/ic_action_settings"
           android:title="@string/action_settings"
           android:showAsAction="always" 
-          android:layout_width="wrap_content"/>
-
-    <item android:id="@+id/action_logout"
-          android:icon="@drawable/ic_action_logout"
-          android:title="@string/action_logout"
-          android:showAsAction="never" 
-          android:layout_width="wrap_content"/>    
+          android:layout_width="wrap_content"/>   
 
 </menu>

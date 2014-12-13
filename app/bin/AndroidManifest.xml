@@ -50,7 +50,14 @@
             android:name=".NotificationsActivity"
             android:label="@string/title_activity_notifications" >
         </activity>
+
         <meta-data android:value="@string/facebook_app_id" android:name="com.facebook.sdk.ApplicationId"/>
+
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_signup" >
+        </activity>
+
     </application>
 
 </manifest>

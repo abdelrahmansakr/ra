@@ -1,5 +1,6 @@
 package com.example.app;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,11 +20,12 @@ public class HomeActivity extends Activity {
 	      "Education",
 	      "Books",
 	      "Furniture"};
+	  
 	  int[] imageId = {
 		      R.drawable.image1,
 		      R.drawable.image2,
 		      R.drawable.image3,
-		      R.drawable.image4,};
+		      R.drawable.image4};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

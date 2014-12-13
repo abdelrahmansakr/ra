@@ -117,4 +117,8 @@ public class MainActivity extends FragmentActivity {
 	  // Logs 'app deactivate' App Event.
 	  AppEventsLogger.deactivateApp(this);
 	}
+	public void goToSignupPage(View v) {
+		Intent intent = new Intent(this, SignupActivity.class);
+		startActivity(intent);		
+	}
 }
