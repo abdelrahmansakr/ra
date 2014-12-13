@@ -6,13 +6,62 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.Toast;
 
 public class RestaurantsAndCafesActivity extends Activity {
+	
+	GridView grid;
+	  String[] web = {
+	        "Chilis",
+	      "Crave",
+	      "Spectra",
+	      "Starbucks",
+	      "Beanos",
+	      "Costa",
+	      "Chilis",
+	      "Crave",
+	      "Spectra",
+	      "Starbucks",
+	      "Beanos",
+	      "Costa"};
+	  int[] imageId = {
+		      R.drawable.chilis,
+		      R.drawable.crave,
+		      R.drawable.spectra,
+		      R.drawable.starbucks,
+		      R.drawable.beanos,
+		      R.drawable.costa,
+		      R.drawable.image1,
+		      R.drawable.image1,
+		      R.drawable.image1,
+		      R.drawable.image1,
+		      R.drawable.image1,
+		      R.drawable.image1};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_restaurants_and_cafes);
+		
+		MyCustomGrid adapter = new MyCustomGrid(RestaurantsAndCafesActivity.this, web, imageId);
+	    grid=(GridView)findViewById(R.id.gridView1);
+	    grid.setAdapter(adapter);
+	    grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+	        @Override
+	        public void onItemClick(AdapterView<?> parent, View view,
+	                int position, long id) {
+	            if(web[+ position].equals("Restaurants & Cafes")){
+	            	Intent intent = new Intent(RestaurantsAndCafesActivity.this, RestaurantsAndCafesActivity.class);
+	              	startActivity(intent);
+	            } 
+	            else {
+	            Toast.makeText(RestaurantsAndCafesActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
+	            }
+	        }
+	    });
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
