@@ -107,4 +107,30 @@
         android:typeface="serif" />
     
 
+		<TabHost 
+		    android:id="@android:id/tabhost"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_below="@+id/textView6"
+		    android1:layout_marginTop="20dp"
+		     >
+		    <LinearLayout
+		        android:orientation="vertical"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent">
+		        <TabWidget
+		            android:id="@android:id/tabs"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content" />
+		        <FrameLayout
+		            android:id="@android:id/tabcontent"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent">
+
+		        </FrameLayout>
+		    </LinearLayout>
+
+		</TabHost>
+
+
 </RelativeLayout>

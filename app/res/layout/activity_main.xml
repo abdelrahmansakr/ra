@@ -42,5 +42,14 @@
    	    android:textSize="20dp"
    	    android:textStyle="normal"
    	    android:typeface="serif" />
+
+
+   	    <com.facebook.widget.LoginButton
+   	        android:id="@+id/authButton"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:layout_below="@+id/button3"
+   	        android:layout_centerHorizontal="true"
+   	        android:layout_marginTop="45dp" />
     
 </RelativeLayout>
