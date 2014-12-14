@@ -254,11 +254,11 @@ int id inputmail 0x7f0c0017
 int id large 0x7f0c0005
 int id left 0x7f0c000f
 int id location 0x7f0c0031
-int id locationContent 0x7f0c0034
+int id locationContent 0x7f0c0033
 int id none 0x7f0c0002
 int id normal 0x7f0c0006
 int id openHrs 0x7f0c0032
-int id openHrsContent 0x7f0c0033
+int id openHrsContent 0x7f0c0034
 int id picker_subtitle 0x7f0c0044
 int id right 0x7f0c0010
 int id scrollView1 0x7f0c0020

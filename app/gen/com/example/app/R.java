@@ -653,11 +653,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int large=0x7f0c0005;
         public static final int left=0x7f0c000f;
         public static final int location=0x7f0c0031;
-        public static final int locationContent=0x7f0c0034;
+        public static final int locationContent=0x7f0c0033;
         public static final int none=0x7f0c0002;
         public static final int normal=0x7f0c0006;
         public static final int openHrs=0x7f0c0032;
-        public static final int openHrsContent=0x7f0c0033;
+        public static final int openHrsContent=0x7f0c0034;
         public static final int picker_subtitle=0x7f0c0044;
         public static final int right=0x7f0c0010;
         public static final int scrollView1=0x7f0c0020;
