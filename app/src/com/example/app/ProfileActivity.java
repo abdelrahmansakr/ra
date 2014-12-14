@@ -69,7 +69,11 @@ public class ProfileActivity extends TabActivity {
 	            
 	        case R.id.action_social_notifications:
 	        	openNotifications();
-	        	return true;	            
+	        	return true;
+	        	
+	        case R.id.action_settings:
+	        	openSettings();
+	        	return true;	        	
 	            
 	        default:
 	            return super.onOptionsItemSelected(item);
@@ -80,6 +84,11 @@ public class ProfileActivity extends TabActivity {
 		Intent intent = new Intent(this, HomeActivity.class);
   		startActivity(intent);		
 	}
+	
+	private void openSettings() {
+		Intent intent = new Intent(this, SettingsActivity.class);
+  		startActivity(intent);		
+	}	
 	
 	private void openNotifications() {
 		Intent intent = new Intent(this, NotificationsActivity.class);

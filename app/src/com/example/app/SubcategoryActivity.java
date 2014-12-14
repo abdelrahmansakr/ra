@@ -105,7 +105,7 @@ TabHost tabHost = getTabHost();
 	
 	
 	private void openSettings() {
-//		Intent intent = new Intent(this, SettingsActivity.class);
-//  		startActivity(intent);		
+		Intent intent = new Intent(this, SettingsActivity.class);
+  		startActivity(intent);		
 	}
 }

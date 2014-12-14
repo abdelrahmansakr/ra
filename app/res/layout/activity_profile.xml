@@ -106,6 +106,7 @@
         android:textStyle="normal"
         android:typeface="serif" />
     
+
 		<TabHost 
 		    android:id="@android:id/tabhost"
 		    android:layout_width="fill_parent"
@@ -130,7 +131,6 @@
 		    </LinearLayout>
 
 		</TabHost>
-    
-    
+
 
 </RelativeLayout>
