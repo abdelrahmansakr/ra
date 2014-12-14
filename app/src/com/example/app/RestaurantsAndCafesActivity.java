@@ -53,8 +53,8 @@ public class RestaurantsAndCafesActivity extends Activity {
 	        @Override
 	        public void onItemClick(AdapterView<?> parent, View view,
 	                int position, long id) {
-	            if(web[+ position].equals("Restaurants & Cafes")){
-	            	Intent intent = new Intent(RestaurantsAndCafesActivity.this, RestaurantsAndCafesActivity.class);
+	            if(web[+ position].equals("Chilis")){
+	            	Intent intent = new Intent(RestaurantsAndCafesActivity.this, SubcategoryActivity.class);
 	              	startActivity(intent);
 	            } 
 	            else {

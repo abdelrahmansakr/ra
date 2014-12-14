@@ -13,30 +13,30 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="18dp"
-        android:src="@raw/minnie" />
+        android:src="@drawable/chilis" />
 
     <TextView
-        android:id="@+id/inputmail"
+        android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/inputUsername"
-        android:layout_below="@+id/inputUsername"
+        android:layout_alignLeft="@+id/subcategoryName"
+        android:layout_below="@+id/subcategoryName"
         android:layout_marginTop="17dp"
-        android:text="@string/email"
+        android:text="Address: "
         android:textColor="@color/greyText"
         android:textSize="15dp"
         android:textStyle="normal"
         android:typeface="serif" />
 
     <TextView
-        android:id="@+id/inputUsername"
+        android:id="@+id/subcategoryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignTop="@+id/imageView1"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="14dp"
-        android:text="@string/name"
+        android:text="Chili's"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/textColor"
         android:textSize="18dp"
@@ -44,63 +44,36 @@
         android:typeface="serif" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/addressContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView4"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_marginLeft="23dp"
-        android:layout_toRightOf="@+id/textView4"
-        android:text="@string/mybirthdate"
+        android:layout_alignLeft="@+id/address"
+        android:layout_below="@+id/address"
+        android:text="Street # 90, Meeting Point"
         android:textColor="@color/textColor"
         android:textSize="14dp"
         android:textStyle="normal"
         android:typeface="serif" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView6"
-        android:layout_alignBottom="@+id/textView6"
-        android:layout_alignLeft="@+id/textView5"
-        android:text="@string/female"
-        android:textColor="@color/textColor"
-        android:textSize="14dp"
-        android:textStyle="normal"
-        android:typeface="serif" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/inputmail"
-        android:layout_below="@+id/inputmail"
-        android:text="@string/myemail"
-        android:textColor="@color/textColor"
-        android:textSize="14dp"
-        android:textStyle="normal"
-        android:typeface="serif" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignLeft="@+id/addressContent"
         android:layout_below="@+id/imageView1"
-        android:text="@string/birthdate"
+        android:text="Location: "
         android:textColor="@color/greyText"
         android:textSize="15dp"
         android:textStyle="normal"
         android:typeface="serif" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/openHrs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_below="@+id/textView4"
-        android:text="@string/gender"
+        android:layout_alignLeft="@+id/location"
+        android:layout_below="@+id/location"
+        android:text="Opening Hours: "
         android:textColor="@color/greyText"
         android:textSize="15dp"
         android:textStyle="normal"
@@ -110,7 +83,7 @@
 		    android:id="@android:id/tabhost"
 		    android:layout_width="fill_parent"
 		    android:layout_height="fill_parent"
-		    android:layout_below="@+id/textView6"
+		    android:layout_below="@+id/openHrs"
 		    android1:layout_marginTop="20dp"
 		     >
 		    <LinearLayout
@@ -130,7 +103,29 @@
 		    </LinearLayout>
 
 		</TabHost>
-    
-    
+
+		<TextView
+		    android1:id="@+id/locationContent"
+		    android1:layout_width="wrap_content"
+		    android1:layout_height="wrap_content"
+		    android1:layout_above="@+id/openHrs"
+		    android1:layout_toRightOf="@+id/location"
+		    android1:text="New Cairo"
+		    android1:textColor="@color/textColor"
+		    android1:textSize="14dp"
+		    android1:textStyle="normal"
+		    android1:typeface="serif" />
+
+		<TextView
+		    android1:id="@+id/openHrsContent"
+		    android1:layout_width="wrap_content"
+		    android1:layout_height="wrap_content"
+		    android1:layout_above="@android:id/tabhost"
+		    android1:layout_toRightOf="@+id/openHrs"
+		    android1:text="From 10AM to 11PM"
+		    android1:textColor="@color/textColor"
+		    android1:textSize="14dp"
+		    android1:textStyle="normal"
+		    android1:typeface="serif" />
 
 </RelativeLayout>

@@ -34,10 +34,8 @@
     <string name="title_activity_notifications">Notifications</string>
     <string name="notifications">Notifications:</string>
     <string name="action_logout">Logout</string>
-
     <string name="facebook_app_id">592528824214377</string>
     <string name="title_facebook_login">com.facebook.LoginActivity</string>
-
     <string name="title_activity_signup">Sign Up</string>
     <string name="username">Username:</string>
     <string name="confirmpassword">Confirm Password:</string>
@@ -46,5 +44,12 @@
     <string name="country">Country:</string>
     <string name="city">City:</string>
     <string name="submit">Submit</string>
+    <string name="title_activity_news_feed">NewsFeedActivity</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+    <string name="title_activity_favourites">FavouritesActivity</string>
+    <string name="title_activity_subcategory">SubcategoryActivity</string>
+    <string name="title_activity_reviews">ReviewsActivity</string>
+    <string name="title_activity_likers">LikersActivity</string>
+    <string name="title_activity_events">EventsActivity</string>
 
 </resources>
