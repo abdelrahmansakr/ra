@@ -68,10 +68,19 @@ public class HomeActivity extends Activity {
 	        case R.id.action_social_notifications:
 	        	openNotifications();
 	        	return true;
-	            
+	        	
+	        case R.id.action_settings:
+	        	openSettings();
+	        	return true;
+	        	
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
+	}
+
+	private void openSettings() {
+		Intent intent = new Intent(this, SettingsActivity.class);
+  		startActivity(intent);		
 	}
 
 	private void openNotifications() {

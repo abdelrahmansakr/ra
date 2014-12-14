@@ -42,5 +42,18 @@
     <string name="country">Country:</string>
     <string name="city">City:</string>
     <string name="submit">Submit</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_profile_settings">Profile Settings</string>
+    <string name="title_activity_account_settings">Account</string>
+    <color name="greyBackground">#212121</color>
+    <string name="editProfile">Edit Profile:</string>
+    <string name="save">Save</string>
+    <string name="changepassword">Change Password:</string>
+    <string name="oldpassword">Old Password:</string>
+    <string name="newpassword">New Password:</string>
+    <string name="editaccount">Edit Account:</string>
+    <string name="allownotifications">Allow Notificaions:</string>
+    <string name="notificationsound">Notification Sound:</string>
+    <string name="privacy">Privacy:</string>
 
 </resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="${LinearPackage}.${activityClass}" 
+  android:background="@color/appBackground">
+   
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="940dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/editaccount"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/greyText"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="14dp"
+                android:text="@string/allownotifications"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="18dp"
+                android:text="@string/notificationsound"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignLeft="@+id/switch1" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="18dp"
+                android:text="@string/privacy"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignRight="@+id/switch2"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:text="@string/save"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:onClick="goToProfile" />
+            
+        </RelativeLayout>
+    </ScrollView>            
+
+</LinearLayout>
