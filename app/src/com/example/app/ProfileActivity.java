@@ -1,5 +1,10 @@
 package com.example.app;
 
+import model.User;
+import retrofit.Callback;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
+import util.ApiRouter;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +15,11 @@ import android.view.View;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 import android.widget.TabWidget;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class ProfileActivity extends TabActivity {
+	private TextView username;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +58,30 @@ public class ProfileActivity extends TabActivity {
 			View v = tw.getChildAt(i);
 			v.setBackgroundDrawable(getResources().getDrawable(R.drawable.orange_grey));
 		}
+        
+//		username = (TextView)findViewById(R.id.inputUsername);
+//		username.setText("dhjlkjofikdlkd");
+        username = (TextView)findViewById(R.id.inputUsername);
+       ApiRouter.withoutToken().getUser(1, new Callback<User>() {
+		
+		@Override
+		public void success(User user, Response response) {
+			// TODO Auto-generated method stub
+			username.setText(user.getUserName());
+			Toast.makeText(getApplicationContext(), "Your email is: " + user.getEmail() ,Toast.LENGTH_LONG).show();
+			System.out.println(user.getEmail());
+			System.out.println("HERE!!!!!");
+			
+		}
+		
+		@Override
+		public void failure(RetrofitError arg0) {
+			// TODO Auto-generated method stub
+			System.out.println("FAIL ................");
+			
+			
+		}
+	});
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -93,5 +125,30 @@ public class ProfileActivity extends TabActivity {
 	private void openNotifications() {
 		Intent intent = new Intent(this, NotificationsActivity.class);
   		startActivity(intent);		
-	}	
+	}
+	
+//	@Override
+//	protected void onResume() {
+//		super.onResume();
+//
+//		refreshViews();
+//	}
+//	
+//	protected void refreshViews() {
+////		adpProducts.clear();
+////		startProgress();
+////		ApiRouter.withoutToken().getProducts(new Callback<List<Product>>() {
+////			@Override
+////			public void success(List<Product> products, Response response) {
+////				adpProducts.addAll(products);
+////				stopProgress();
+////			}
+////			@Override
+////			public void failure(RetrofitError e) {
+////				displayError(e);
+////			}
+////		});
+//		Gson gson = new Gson();
+//		
+//	}
 }
