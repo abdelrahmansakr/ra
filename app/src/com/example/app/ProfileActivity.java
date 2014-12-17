@@ -70,16 +70,12 @@ public class ProfileActivity extends TabActivity {
 			username.setText(user.getUserName());
 			Toast.makeText(getApplicationContext(), "Your email is: " + user.getEmail() ,Toast.LENGTH_LONG).show();
 			System.out.println(user.getEmail());
-			System.out.println("HERE!!!!!");
-			
+			System.out.println("HERE!!!!!");	
 		}
-		
 		@Override
 		public void failure(RetrofitError arg0) {
 			// TODO Auto-generated method stub
-			System.out.println("FAIL ................");
-			
-			
+			System.out.println(arg0);
 		}
 	});
 	}
